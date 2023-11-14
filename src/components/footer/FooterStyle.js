@@ -1,7 +1,7 @@
 import { makeStyles } from '@mui/styles';
 
 const FooterStyle = makeStyles(() => ({
-  mainContainer: {
+  footerContainer: {
     background: 'linear-gradient(to top, #002A38, #004F6E)',
     bottom: 0,
     width: '100%',

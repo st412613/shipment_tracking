@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import HeaderStyle from './HeaderStyle';
 import { Facebook, Twitter, Instagram, Pinterest, Phone, Mail, Clear, Menu } from '@mui/icons-material';
 import MenuItem from '@mui/material/MenuItem';
@@ -18,7 +19,7 @@ const Header = () => {
 
   return (
     <>
-      <div className={classes.topNavContainer}>
+      <div className={classes.headerContainer}>
         <div className={classes.socialIconContainer}>
           <Facebook />
           <Twitter />
@@ -38,12 +39,12 @@ const Header = () => {
         <div className={classes.navLinksContainer}>
           <div className={classes.navContent}>
             <ul>
-              <li>Home</li>
-              <li>About Us</li>
-              <li>Services</li>
-              <li>Tracking</li>
-              <li>Customer Login</li>
-              <li>Contact Us</li>
+              <li><NavLink to="/" className={classes.activeLink}>Home</NavLink></li>
+              <li><NavLink to="/about" className={classes.activeLink}>About Us</NavLink></li>
+              <li><NavLink to="/services" className={classes.activeLink}>Services</NavLink></li>
+              <li><NavLink to="/tracking" className={classes.activeLink}>Tracking</NavLink></li>
+              <li><NavLink to="/customer-login" className={classes.activeLink}>Customer Login</NavLink></li>
+              <li><NavLink to="/contact-us" className={classes.activeLink}>Contact Us</NavLink></li>
             </ul>
           </div>
         </div>
@@ -54,12 +55,12 @@ const Header = () => {
       </div>
       {isNavOpen ? 
         <Box className={classes.menuShow}>
-          <MenuItem color='black'>Home</MenuItem>
-          <MenuItem color='black'>About Us</MenuItem>
-          <MenuItem color='black'>Services</MenuItem>
-          <MenuItem color='black'>Tracking</MenuItem>
-          <MenuItem color='black'>Customer Login</MenuItem>
-          <MenuItem color='black'>Contact Us</MenuItem>
+          <MenuItem><NavLink to="/" className={classes.activeLink}>Home</NavLink></MenuItem>
+          <MenuItem><NavLink to="/about" className={classes.activeLink}>About Us</NavLink></MenuItem>
+          <MenuItem><NavLink to="/services" className={classes.activeLink}>Services</NavLink></MenuItem>
+          <MenuItem><NavLink to="/tracking" className={classes.activeLink}>Tracking</NavLink></MenuItem>
+          <MenuItem><NavLink to="/customer-login" className={classes.activeLink}>Customer Login</NavLink></MenuItem>
+          <MenuItem><NavLink to="/contact-us" className={classes.activeLink}>Contact Us</NavLink></MenuItem>
         </Box> 
         : 
         <></>

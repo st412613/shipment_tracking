@@ -7,7 +7,7 @@ const Footer = () => {
 
   return (
     <>
-      <div className={classes.mainContainer}>
+      <div className={classes.footerContainer}>
         <div className={classes.topContainer}>
           <div className={classes.contentBox}>
             <h2>About Us</h2>
@@ -43,7 +43,6 @@ const Footer = () => {
               <p><span><Mail /></span>Sales@nowtransitcargo.com</p>
               <p><span><Phone /></span>9930002453</p>
               <p><span><Phone /></span>9646666663</p>
-              {/* </div> */}
             </div>
           </div>
 

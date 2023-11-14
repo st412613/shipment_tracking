@@ -1,7 +1,7 @@
 import { makeStyles } from '@mui/styles';
 
 const HeaderStyle = makeStyles(() => ({
-  topNavContainer: {
+  headerContainer: {
     padding: '8px 40px',
     display: 'flex',
     maxWidth: '100%',
@@ -31,6 +31,7 @@ const HeaderStyle = makeStyles(() => ({
     justifyContent: 'space-between',
     color: '#fff',
     '& p': {
+      marginBottom: '0px',
       display:'flex',
       fontSize: '14px',
       alignItems: 'center',
@@ -81,6 +82,19 @@ const HeaderStyle = makeStyles(() => ({
       justifyContent: 'space-between',
       '& li': {
         listStyle: 'none',
+        '& a': {
+          textDecoration: 'none',
+          color: '#fff',
+          transition: 'color 0.3s',
+
+          '&:hover': {
+            color: '#004F6E',
+          },
+
+          '&.active': {
+            color: '#004F6E', 
+          },
+        },
       }
     }
   },
@@ -89,11 +103,24 @@ const HeaderStyle = makeStyles(() => ({
   },
   menuShow: {
     display: 'none',
+    '& a': {
+      textDecoration: 'none',
+      color: '#fff',
+      transition: 'color 0.3s',
+
+      '&:hover': {
+        color: '#004F6E',
+      },
+
+      '&.active': {
+        color: '#004F6E', 
+      },
+    },
   },
 
 
   '@media screen and (max-width: 768px)': {
-    topNavContainer: {
+    headerContainer: {
       width: '100%',
       padding: '6px 30px',
     },

@@ -1,12 +1,12 @@
 import React from 'react';
 import NewsLetterStyle from './NewsletterStyle';
-import { Email } from '@mui/icons-material';
+import { Email, Send } from '@mui/icons-material';
 
 const Newsletter = () => {
   const classes = NewsLetterStyle();
 
   return (
-    <div className={classes.mainContainer}>
+    <div className={classes.newsletterContainer}>
       <div className={classes.leftContainer}>
         <div className={classes.content}>
           <div className={classes.icon}>
@@ -22,7 +22,7 @@ const Newsletter = () => {
         </div>
       </div>
       <div className={classes.rightContainer}>
-        <button>hello</button>
+        <button>Subscribe<Send /></button>
       </div>
     </div>
   );
