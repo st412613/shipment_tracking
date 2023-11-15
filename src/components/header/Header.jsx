@@ -40,7 +40,7 @@ const Header = () => {
           <div className={classes.navContent}>
             <ul>
               <li><NavLink to="/" className={classes.activeLink}>Home</NavLink></li>
-              <li><NavLink to="/about" className={classes.activeLink}>About Us</NavLink></li>
+              <li><NavLink to="/about-us" className={classes.activeLink}>About Us</NavLink></li>
               <li><NavLink to="/services" className={classes.activeLink}>Services</NavLink></li>
               <li><NavLink to="/tracking" className={classes.activeLink}>Tracking</NavLink></li>
               <li><NavLink to="/customer-login" className={classes.activeLink}>Customer Login</NavLink></li>
@@ -56,7 +56,7 @@ const Header = () => {
       {isNavOpen ? 
         <Box className={classes.menuShow}>
           <MenuItem><NavLink to="/" className={classes.activeLink}>Home</NavLink></MenuItem>
-          <MenuItem><NavLink to="/about" className={classes.activeLink}>About Us</NavLink></MenuItem>
+          <MenuItem><NavLink to="/about-us" className={classes.activeLink}>About Us</NavLink></MenuItem>
           <MenuItem><NavLink to="/services" className={classes.activeLink}>Services</NavLink></MenuItem>
           <MenuItem><NavLink to="/tracking" className={classes.activeLink}>Tracking</NavLink></MenuItem>
           <MenuItem><NavLink to="/customer-login" className={classes.activeLink}>Customer Login</NavLink></MenuItem>

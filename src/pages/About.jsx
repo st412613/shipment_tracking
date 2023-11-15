@@ -1,8 +1,15 @@
 import React from 'react';
+import Navigation from '../common/navigate/Navigation';
+import HeadingSection from '../common/headingSection/HeadingSection';
+import AboutCompany from '../components/aboutCompany/AboutCompany';
 
 const About = () => {
   return (
-    <div>About</div>
+    <>
+      <Navigation />
+      <HeadingSection title='About Company' subtitle='know more about us'/>
+      <AboutCompany />
+    </>
   );
 };
 

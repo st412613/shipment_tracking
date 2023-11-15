@@ -10,6 +10,7 @@ import AirplaneLogo from '../../assets/images/airplaneLogo.svg';
 import TopayLogo from '../../assets/images/topayLogo.svg';
 import ReverseLogisticLogo from '../../assets/images/reverseLogisticLogo.svg';
 import WarehouseLogo from '../../assets/images/warehouseLogo.svg';
+import HeadingSection from '../../common/headingSection/HeadingSection';
 
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -34,9 +35,7 @@ const OurServices = () => {
   return (
     <div className={classes.ourServicesContainer}>
       <div className={classes.mainContainer}>
-        <h1>Our Services</h1>
-        <h5>We are providing Surface Cargo, Train Cargo & Air Cargo Services to our Clients.</h5>
-
+        <HeadingSection title='Our Services' subtitle='We are providing Surface Cargo, Train Cargo & Air Cargo Services to our Clients.'/>
         <Box className={classes.gridContainer}>
           <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
             {itemsData.map((item, id) => (

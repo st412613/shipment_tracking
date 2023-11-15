@@ -8,26 +8,6 @@ const OurServicesStyle = makeStyles(() => ({
     width: '90%',
     margin: '6rem auto',
     textAlign: 'center',
-    '& h1': {
-      display: 'inline-flex',
-      color:  '#004F6E',
-      position: 'relative',
-      '&::before': {
-        content: '""',
-        position: 'absolute',
-        left: 0,
-        bottom: '-6px',
-        backgroundColor: '#e91e63',
-        height: '2px',
-        boxSizing: 'border-box',
-        width: '100%',
-      }
-    },
-    '& h5': {
-      marginTop: '20px',
-      fontSize: '16px',
-      fontWeight: 400,
-    }
   },
   gridContainer: {
     marginTop: '3rem',
@@ -62,12 +42,6 @@ const OurServicesStyle = makeStyles(() => ({
   '@media screen and (max-width: 768px)': {
     mainContainer: {
       margin: '3rem auto',
-      '& h1': {
-        fontSize: '30px',
-      },
-      '& h5': {
-        fontSize: '14px',
-      }
     },
     gridContainer: {
       marginTop: '2rem',

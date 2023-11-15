@@ -1,8 +1,11 @@
 import React from 'react';
+import Navigation from '../common/navigate/Navigation';
 
 const ContactUs = () => {
   return (
-    <div>ContactUs</div>
+    <>
+      <Navigation />
+    </>
   );
 };
 
