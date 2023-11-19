@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollToTopOnPageChange from './common/scrollToTop/ScrollToTop';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import Home from './pages/Home';
@@ -15,6 +16,7 @@ function App() {
   return (
     <>
       <Router>
+        <ScrollToTopOnPageChange />
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />

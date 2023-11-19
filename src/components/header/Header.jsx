@@ -13,9 +13,9 @@ const Header = () => {
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
   };
-  // const closeNav = () => {
-  //   setIsNavOpen(false);
-  // };
+  const closeNav = () => {
+    setIsNavOpen(false);
+  };
 
   return (
     <>
@@ -75,13 +75,15 @@ const Header = () => {
       </div>
       {isNavOpen ? 
         <Box className={classes.menuShow}>
-          <MenuItem><NavLink to="/" className={classes.activeLink}>Home</NavLink></MenuItem>
-          <MenuItem><NavLink to="/about-us" className={classes.activeLink}>About Us</NavLink></MenuItem>
-          <MenuItem><NavLink to="/services" className={classes.activeLink}>Services</NavLink></MenuItem>
-          <MenuItem><NavLink to="/tracking" className={classes.activeLink}>Tracking</NavLink></MenuItem>
-          <MenuItem><NavLink to="/customer-login" className={classes.activeLink}>Customer Login</NavLink></MenuItem>
-          <MenuItem><NavLink to="/contact-us" className={classes.activeLink}>Contact Us</NavLink></MenuItem>
-        </Box> 
+          <MenuItem onClick={closeNav}><NavLink to="/" className={classes.activeLink}>Home</NavLink></MenuItem>
+          <MenuItem onClick={closeNav}><NavLink to="/about-us" className={classes.activeLink}>About Us</NavLink></MenuItem>
+          <MenuItem onClick={closeNav}><NavLink to="/services" className={classes.activeLink}>Our Services</NavLink></MenuItem>
+          <MenuItem onClick={closeNav}><NavLink to="/services/IT-services" className={classes.activeLink}>IT Services</NavLink></MenuItem>
+          <MenuItem onClick={closeNav}><NavLink to="/pincode-Tracking" className={classes.activeLink}>Pincode Tracking</NavLink></MenuItem>
+          <MenuItem onClick={closeNav}><NavLink to="/users/track-Your-Shipment" className={classes.activeLink}>Track Shipment</NavLink></MenuItem>
+          <MenuItem onClick={closeNav}><NavLink to="/customer-login" className={classes.activeLink}>Customer Login</NavLink></MenuItem>
+          <MenuItem onClick={closeNav}><NavLink to="/contact-us" className={classes.activeLink}>Contact Us</NavLink></MenuItem>
+        </Box>
         : 
         <></>
       }

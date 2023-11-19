@@ -219,8 +219,11 @@ const HeaderStyle = makeStyles(() => ({
     menuShow: {
       backgroundColor: '#e91e63',
       color:'#fff',
-      zIndex: '1',
-      height: 'auto',
+      zIndex: '1000',
+      height: '100vh',
+      width: '60%',
+      position: 'sticky',
+      top: 0,
       display: 'block',
       transition: 'all .5s',
     },  
