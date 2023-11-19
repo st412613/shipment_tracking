@@ -9,6 +9,7 @@ import OurServices from './pages/OurServices';
 import ITServices from './pages/ITServices';
 import PincodeTrack from './pages/PincodeTrack';
 import TrackShipment from './pages/TrackShipment';
+import CustomerLogin from './pages/CustomerLogin';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path='/services/IT-services' element={<ITServices />} />
           <Route path='/pincode-Tracking' element={<PincodeTrack />} />
           <Route path='/users/track-Your-Shipment' element={<TrackShipment />} />
+          <Route path='/customer-login' element={<CustomerLogin />} />
         </Routes>
         <Footer />
       </Router>
