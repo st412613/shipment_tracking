@@ -27,7 +27,7 @@ const Header = () => {
           <Pinterest />
         </div>
         <div className={classes.ContactInfoContainer}>
-          <p><span><Mail /></span>INFO@NOWTRANSITCARGO.COM,  Sales@nowtransitcargo.com</p>
+          <p><span><Mail /></span>info@nowtransitcargo.com ,  Sales@nowtransitcargo.com</p>
           <p><span><Phone /></span>9930002453, 9646666663</p>
         </div>
       </div>

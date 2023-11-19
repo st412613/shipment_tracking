@@ -89,6 +89,7 @@ const HeaderStyle = makeStyles(() => ({
         listStyle: 'none',
         '& a': {
           textDecoration: 'none',
+          fontSize: '14px',
           color: '#fff',
           transition: 'color 0.3s',
           display: 'flex',

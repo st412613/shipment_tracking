@@ -90,7 +90,7 @@ const ContactUsForm = () => {
             <div className={classes.flexContent}>
               <div className={classes.iconContent}><Place /></div>
               <div className={classes.infoContent}>
-                <h5>NCPL LOGISTICS PVT. LTD.</h5>
+                <h5>NowTransit Cargo PVT. LTD.</h5>
                 <p>A 301 murdang building sector 1 vasant nagri vasai east mumbai 401208</p>
                 <p>Gala no 1 Reliable complex near gaon devi mandir sativali vasai east mumbai 401208</p>
               </div>
@@ -106,7 +106,7 @@ const ContactUsForm = () => {
               <div className={classes.iconContent}><Email /></div>
               <div className={classes.infoContent}>
                 <h5>Email</h5>
-                <p>INFO@NOWTRANSITCARGO.COM Sales@nowtransitcargo.com
+                <p>info@nowtransitcargo.com Sales@nowtransitcargo.com
                 </p>
               </div>
             </div>

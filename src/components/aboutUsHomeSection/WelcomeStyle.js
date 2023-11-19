@@ -21,6 +21,7 @@ const WelcomeStyle = makeStyles(() => ({
     '& div': {
       margin: '0px 20px',
       '& h1': {
+        fontSize: '2.3rem',
         color:  '#004F6E',
         position: 'relative',
         '&::before': {

@@ -13,7 +13,7 @@ const Footer = () => {
             <h2>About Us</h2>
             <div className={classes.content}>
               <h1>NCPL</h1>
-              <p>NCPL Logistics Pvt Ltd is today a multi-unit, multi-location and multi-faceted Transport and Logistics conglomerate in India having a tracking record of over Three Months. As a group it offers a complete range of Supply chain solutions that harness the use of technology and decision support tools.</p>
+              <p>NowTransit Cargo Private Limited today a multi-unit, multi-location and multi-faceted Transport and Logistics conglomerate in India having a tracking record of over Three Months. As a group it offers a complete range of Supply chain solutions that harness the use of technology and decision support tools.</p>
               <div className={classes.socialIcon}>
                 <Facebook />
                 <Twitter />
@@ -39,7 +39,7 @@ const Footer = () => {
               <p><span><Apartment /></span>A 301 murdang building sector 1 vasant nagri vasai east mumbai 401208</p>
               <h3>Regional Office Address</h3>
               <p><span><LocationOn /></span>Gala no 1 Reliable complex near gaon devi mandir sativali vasai east mumbai 401208</p>
-              <p><span><Mail /></span>INFO@NOWTRANSITCARGO.COM</p>
+              <p><span><Mail /></span>info@nowtransitcargo.com</p>
               <p><span><Mail /></span>Sales@nowtransitcargo.com</p>
               <p><span><Phone /></span>9930002453</p>
               <p><span><Phone /></span>9646666663</p>

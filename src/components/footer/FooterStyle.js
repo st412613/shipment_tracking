@@ -16,7 +16,7 @@ const FooterStyle = makeStyles(() => ({
     margin: '10px',
     '& h2': {
       textTransform: 'uppercase',
-      fontSize: '22px',
+      fontSize: '18px',
       marginBottom: '20px',
       fontWeight: '600',
       position: 'relative',
@@ -41,7 +41,7 @@ const FooterStyle = makeStyles(() => ({
     },
     '& p': {
       margin: '10px 10px 10px 0px',
-      fontSize: '14px',
+      fontSize: '12px',
       display:'flex',
       alignItems: 'center',
       '& span': {
@@ -56,7 +56,7 @@ const FooterStyle = makeStyles(() => ({
     },
     '& h3': {
       color: 'lightblue',
-      fontSize: '16px',
+      fontSize: '14px',
       fontWeight: '600',
     },
   },
@@ -75,7 +75,7 @@ const FooterStyle = makeStyles(() => ({
     margin: '40px 0px',
     '& h5': {
       cursor: 'pointer',
-      fontSize: '16px',
+      fontSize: '14px',
       margin: '10px 0px',
       fontWeight: '600',
       display:'flex',
@@ -101,6 +101,7 @@ const FooterStyle = makeStyles(() => ({
     alignItems: 'center',
     '& p': {
       display: 'flex',
+      fontSize: '14px',
       alignItem:'center',
       fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif"',
     },
@@ -130,11 +131,12 @@ const FooterStyle = makeStyles(() => ({
   '@media screen and (max-width: 768px)': {
     topContainer: {
       display: 'block',
+      padding: '20px 0px',
     },
     contentBox: {
       margin: '0px 10px',
       '& h2': {
-        fontSize: '20px',
+        fontSize: '18px',
         marginBottom: '10px',
         '&::before': {
           width: '8%',

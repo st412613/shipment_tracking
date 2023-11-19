@@ -18,7 +18,7 @@ const HeroStyle = makeStyles(() => ({
   disclaimerContainer: {
     margin: '40px 0px',
     '& div': {
-      background: '#dedffb',
+      background: '#e5eaf8',
       color: '#004F6E'
     }
   },

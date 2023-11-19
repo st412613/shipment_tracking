@@ -83,8 +83,20 @@ const NewsLetterStyle = makeStyles(() => ({
     content: {
       margin: '0px',
     },
+    icon: {
+      textAlign: 'right',
+      '& svg': {
+        margin: '0px 0px'
+      }
+    },
     text: {
       width: '100%',
+      '& h3': {
+        fontSize: '1.2rem',
+      },
+      '& h2': {
+        fontSize: '1.6rem',
+      },
     },
     rightContainer: {
       width: '100%',
