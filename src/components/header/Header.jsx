@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import HeaderStyle from './HeaderStyle';
-import { Facebook, Twitter, Instagram, Pinterest, Phone, Mail, Clear, Menu } from '@mui/icons-material';
+import { Facebook, Twitter, Instagram, Pinterest, Phone, Mail, Clear, Menu, KeyboardArrowDown } from '@mui/icons-material';
 import MenuItem from '@mui/material/MenuItem';
 import {Box} from '@mui/material';
 import companyLogo from '../../assets/images/CompanyLogo.jpeg';
@@ -36,13 +36,33 @@ const Header = () => {
         <div className={classes.logoContainer}>
           <img src={companyLogo} alt='CompanyLogo'/>
         </div>
+        <div className={classes.clipContainer}></div>
         <div className={classes.navLinksContainer}>
           <div className={classes.navContent}>
             <ul>
               <li><NavLink to="/" className={classes.activeLink}>Home</NavLink></li>
               <li><NavLink to="/about-us" className={classes.activeLink}>About Us</NavLink></li>
-              <li><NavLink to="/services" className={classes.activeLink}>Services</NavLink></li>
-              <li><NavLink to="/tracking" className={classes.activeLink}>Tracking</NavLink></li>
+              <li className={classes.dropdown}>
+                <NavLink to="/services" className={classes.activeLink}>
+                  Services
+                  <KeyboardArrowDown />
+                </NavLink>
+                <div className={classes.dropdownContent} style={{color: 'black'}}>
+                  <NavLink to="/services" className={classes.activeLink}>Our Services</NavLink>
+                  <NavLink to="/services/IT-services" className={classes.activeLink}>IT Services</NavLink>
+                </div>
+              </li>
+              {/* <li><NavLink to="/tracking" className={classes.activeLink}>Tracking</NavLink></li> */}
+              <li className={classes.dropdown}>
+                <NavLink to="/pincode-Tracking" className={classes.activeLink}>
+                  Tracking
+                  <KeyboardArrowDown />
+                </NavLink>
+                <div className={classes.dropdownContent} style={{color: 'black'}}>
+                  <NavLink to="/pincode-Tracking" className={classes.activeLink}>Pincode Tracking</NavLink>
+                  <NavLink to="/users/track-Your-Shipment" className={classes.activeLink}>Track Shipment</NavLink>
+                </div>
+              </li>
               <li><NavLink to="/customer-login" className={classes.activeLink}>Customer Login</NavLink></li>
               <li><NavLink to="/contact-us" className={classes.activeLink}>Contact Us</NavLink></li>
             </ul>

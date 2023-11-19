@@ -65,8 +65,13 @@ const HeaderStyle = makeStyles(() => ({
       height: '100%',
     }
   },
+  clipContainer: {
+    width: '15%',
+    background: '#e91e63',
+    clipPath: 'polygon(20% 0, 100% 0, 100% 100%, 0 100%)',
+  },
   navLinksContainer: {
-    width: '75%',
+    width: '60%',
     background: '#fff',
   },
   navContent: {
@@ -74,8 +79,8 @@ const HeaderStyle = makeStyles(() => ({
     height: '100%',
     textTransform: 'uppercase',
     textAlign: 'center',
-    padding: '1.8rem 3rem 1rem 8rem',
-    clipPath: 'polygon(6% 0, 100% 0, 100% 100%, 0 100%)',
+    padding: '1.8rem 3rem 1rem 0rem',
+    // clipPath: 'polygon(6% 0, 100% 0, 100% 100%, 0 100%)',
     '& ul': {
       alignItems: 'center',
       display: 'flex',
@@ -86,11 +91,12 @@ const HeaderStyle = makeStyles(() => ({
           textDecoration: 'none',
           color: '#fff',
           transition: 'color 0.3s',
-
+          display: 'flex',
+          alignItems: 'center',
+          marginRight: '10px',
           '&:hover': {
             color: '#004F6E',
           },
-
           '&.active': {
             color: '#004F6E', 
           },
@@ -117,12 +123,43 @@ const HeaderStyle = makeStyles(() => ({
       },
     },
   },
+  dropdown: {
+    position: 'relative',
+    display: 'inline-block',
+    '&:hover $dropdownContent': {
+      display: 'block',
+    },
+    '&:hover a': {
+      color: '#004F6E',
+    },
+  },
+
+  dropdownContent: {
+    display: 'none',
+    position: 'absolute',
+    backgroundColor: '#f9f9f9',
+    minWidth: '160px',
+    boxShadow: '0px 8px 16px 0px rgba(0,0,0,0.2)',
+    zIndex: 1,
+    '& a': {
+      color: '#000 !important',
+      fontSize: '14px !important',
+      padding: '12px 16px',
+      textDecoration: 'none',
+      display: 'block',
+      marginRight: '0px !important'
+    },
+    '& a:hover': {
+      backgroundColor: '#ddd',
+      color: '#e91e63 !important',
+    },
+  },
 
 
   '@media screen and (max-width: 768px)': {
     headerContainer: {
       width: '100%',
-      padding: '6px 30px',
+      padding: '6px 10px',
     },
     socialIconContainer: {
       width: '20%',
@@ -133,7 +170,7 @@ const HeaderStyle = makeStyles(() => ({
       }
     },
     ContactInfoContainer: {
-      width: '80%',
+      width: '100%',
       display: 'grid',
       '& p': {
         display:'inline-flex',
@@ -151,6 +188,9 @@ const HeaderStyle = makeStyles(() => ({
         width: '100%',
         height: '100%',
       }
+    },
+    clipContainer: {
+      display: 'none',
     },
     navLinksContainer: {
       width: '50%',

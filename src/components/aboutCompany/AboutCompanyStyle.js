@@ -2,16 +2,25 @@ import { makeStyles } from '@mui/styles';
 
 const AboutCompanyStyle = makeStyles(() => ({
   AboutCompanyContainer: {
-    border: '1px solid black',
     width: '100%',
   },
   AboutCompanyContent: {
     width: '90%',
     margin: '20px auto',
-    display: 'flex'
+    '& p': {
+      marginBottom: '2rem',
+    },
   },
 
-  '@media screen and (max-width: 768px)': {}
+  '@media screen and (max-width: 768px)': {
+    AboutCompanyContent: {
+      margin: '15px auto',
+      '& p': {
+        marginBottom: '1.5rem',
+        fontSize: '14px',
+      },
+    },
+  }
 }));
 
 export default AboutCompanyStyle;

@@ -36,10 +36,13 @@ const useStyles = makeStyles(() => ({
 const Navigation = () => {
   const classes = useStyles();
   const location = useLocation();
+  const pathSegments = location.pathname.split('/');
+  const lastRoute = pathSegments[pathSegments.length - 1];
 
   return (
     <div className={classes.navigationContainer}>
-      <h5><span>HOME</span> / {location.pathname.split('/')[1]}</h5>
+      {/* <h5><span>HOME</span> / {location.pathname.split('/')[1]}</h5> */}
+      <h5><span>HOME</span> / {lastRoute}</h5>
     </div>
   );
 };

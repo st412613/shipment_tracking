@@ -5,6 +5,9 @@ import Home from './pages/Home';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import About from './pages/About';
 import ContactUs from './pages/ContactUs';
+import OurServices from './pages/OurServices';
+import ITServices from './pages/ITServices';
+import PincodeTrack from './pages/PincodeTrack';
 
 function App() {
   return (
@@ -15,6 +18,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<About />} />
           <Route path="/contact-us" element={<ContactUs />} />
+          <Route path='/services' element={<OurServices />} />
+          <Route path='/services/IT-services' element={<ITServices />} />
+          <Route path='/pincode-Tracking' element={<PincodeTrack />} />
         </Routes>
         <Footer />
       </Router>
