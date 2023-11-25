@@ -45,7 +45,7 @@ const ITServices = () => {
           <br />Third Party API Services</h5>
         <img alt='' src='https://www.bluecloudt.com/wp-content/uploads/2020/06/managed-service.jpg' height={'100%'} width={'100%'} style={{ objectFit: 'cover'}} />
       </div>
-      <HeadingSection title='IT Services' subtitle='Checkout our IT services'/>
+      <HeadingSection title='IT Services' subtitle='Explore Our Range of IT Solutions'/>
       <ITService />
     </>
   );

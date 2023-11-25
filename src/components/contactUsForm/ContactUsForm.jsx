@@ -5,7 +5,7 @@ import HeadingSection from '../../common/headingSection/HeadingSection';
 
 const ContactUsForm = () => {
   const classes = ContactUsFormStyles();
-  const mapData = 'https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3763.2503099957653!2d72.83106387337905!3d19.401587941674077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sA%20301%20murdang%20building%20sector%201%20vasant%20nagri%20vasai%20east%20mumbai%20401208!5e0!3m2!1sen!2sin!4v1700396770424!5m2!1sen!2sin';
+  const mapData = 'https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3763.250309995756!2d72.83106387337905!3d19.40158794167408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sA%20301%20Murdang%20Building%20Sector%201%20Vasant%20Nagri%20Vasai(E)%20Mumbai%20%2C%20401208!5e0!3m2!1sen!2sin!4v1700885393634!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade';
 
   // State to manage form data
   const [formData, setFormData] = useState({
@@ -91,8 +91,8 @@ const ContactUsForm = () => {
               <div className={classes.iconContent}><Place /></div>
               <div className={classes.infoContent}>
                 <h5>NowTransit Cargo PVT. LTD.</h5>
-                <p>A 301 murdang building sector 1 vasant nagri vasai east mumbai 401208</p>
-                <p>Gala no 1 Reliable complex near gaon devi mandir sativali vasai east mumbai 401208</p>
+                <p>NOWTRANSIT CARGO PRIVATE LIMITED , A 301 Murdang Building Sector 1 Vasant Nagri Vasai(E) Mumbai , 401208</p>
+                <p>NOWTRANSIT CARGO PRIVATE LIMITED, Gala No 1 Reliable Complex Near Gaon Devi Mandir Sativali Vasai(E) Mumbai 401208.</p>
               </div>
             </div>
             <div className={classes.flexContent}>
@@ -115,7 +115,7 @@ const ContactUsForm = () => {
       </div>
 
       <div className={classes.locationContainer}>
-        <HeadingSection title='Our Location' subtitle='Checkout our Head Office Live Location' />
+        <HeadingSection title='Our Location' subtitle='Explore the Live Location of Our Head Office' />
         <div>
           <iframe src={mapData}></iframe>
         </div>

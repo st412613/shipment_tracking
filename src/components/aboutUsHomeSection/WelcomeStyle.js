@@ -21,7 +21,7 @@ const WelcomeStyle = makeStyles(() => ({
     '& div': {
       margin: '0px 20px',
       '& h1': {
-        fontSize: '2.3rem',
+        fontSize: '1.6rem',
         color:  '#004F6E',
         position: 'relative',
         '&::before': {
@@ -78,7 +78,7 @@ const WelcomeStyle = makeStyles(() => ({
         margin: '0px',
         textAlign: 'center',
         '& h1': {
-          fontSize: '30px',
+          fontSize: '24px',
           '&::before': {
             width: '100%',
           }

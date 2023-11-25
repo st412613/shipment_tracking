@@ -69,6 +69,7 @@ const HeaderStyle = makeStyles(() => ({
     width: '15%',
     background: '#e91e63',
     clipPath: 'polygon(20% 0, 100% 0, 100% 100%, 0 100%)',
+    marginRight: '-1px',
   },
   navLinksContainer: {
     width: '60%',

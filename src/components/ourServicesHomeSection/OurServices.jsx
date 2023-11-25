@@ -35,7 +35,7 @@ const OurServices = () => {
   return (
     <div className={classes.ourServicesContainer}>
       <div className={classes.mainContainer}>
-        <HeadingSection title='Our Services' subtitle='We are providing Surface Cargo, Train Cargo & Air Cargo Services to our Clients.'/>
+        <HeadingSection title='Our Services' subtitle='We make shipping easy! Choose from Surface, Train, or Air Cargo for all-inclusive logistics solutions.'/>
         <Box className={classes.gridContainer}>
           <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
             {itemsData.map((item, id) => (

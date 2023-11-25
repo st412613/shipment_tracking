@@ -7,7 +7,7 @@ const ITService = () => {
     {
       id: 0,
       title: 'MOBILE APPS',
-      description: `MICS Logitics APP available for our all customer to track shipment , Pickup Request & many more .We integrate advancements of mobile technology along with the core aspects of the transportation industry in our customized logistics software solutions. Our holistic approach enables you to simplify complex and highly challenging transport and logistics business processes.
+      description: `NOWTRANSIT CARGO PRIVATE LIMITED APP available for our all customer to track shipment , Pickup Request & many more .We integrate advancements of mobile technology along with the core aspects of the transportation industry in our customized logistics software solutions. Our holistic approach enables you to simplify complex and highly challenging transport and logistics business processes.
       Customer Login Customer Can See his all Shipment
       Track Shipment
       Pickup Request
@@ -17,7 +17,7 @@ const ITService = () => {
     {
       id: 1,
       title: 'LOGISTICS API SERVICES',
-      description: `MICS Logistics provide API, API as a service is a Software as a Service (SaaS) primarily exposed as an API (application programming interface). It allows users to use all our services in his system(software)
+      description: `NOWTRANSIT CARGO PRIVATE LIMITED provide API, API as a service is a Software as a Service (SaaS) primarily exposed as an API (application programming interface). It allows users to use all our services in his system(software)
       We provide API to our Customers, that can intigrate our software to his software.
       
       Daily MIS Report by auto email

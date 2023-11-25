@@ -10,12 +10,12 @@ const About = () => {
   return (
     <>
       <Navigation />
-      <HeadingSection title='About Company' subtitle='know more about us'/>
+      <HeadingSection title='About Company' subtitle='Discover Who We Are'/>
       <AboutCompany />
       <MissionAndVision />
-      <HeadingSection title='Board Members' subtitle='Meet Our Board of directors' />
+      <HeadingSection title='Board Members' subtitle='Introducing Our Directorial Team' />
       <BoardMembers />
-      <HeadingSection title='Our Client' subtitle='Our Partners' />
+      <HeadingSection title='Our Client' subtitle='Our Collaborations' />
       <OurClient />
     </>
   );

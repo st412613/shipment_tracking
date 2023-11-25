@@ -36,9 +36,9 @@ const Footer = () => {
             <h2>Contact Us</h2>
             <div className={classes.content}>
               <h3>Head Office Address</h3>
-              <p><span><Apartment /></span>A 301 murdang building sector 1 vasant nagri vasai east mumbai 401208</p>
+              <p><span><Apartment /></span>NOWTRANSIT CARGO PRIVATE LIMITED , A 301 Murdang Building Sector 1 Vasant Nagri Vasai(E)  Mumbai , 401208</p>
               <h3>Regional Office Address</h3>
-              <p><span><LocationOn /></span>Gala no 1 Reliable complex near gaon devi mandir sativali vasai east mumbai 401208</p>
+              <p><span><LocationOn /></span>NOWTRANSIT CARGO PRIVATE LIMITED, Gala No 1 Reliable Complex Near Gaon Devi Mandir Sativali Vasai(E) Mumbai 401208.</p>
               <p><span><Mail /></span>info@nowtransitcargo.com</p>
               <p><span><Mail /></span>Sales@nowtransitcargo.com</p>
               <p><span><Phone /></span>9930002453</p>
@@ -59,7 +59,7 @@ const Footer = () => {
         </div>
 
         <div className={classes.endLegalContainer}>
-          <p>© Copyright 2023 by NCPL Logistics Pvt. Ltd. All Rights Reserved.</p>
+          <p>© Copyright 2023 by NOWTRANSIT CARGO PRIVATE LIMITED. All Rights Reserved.</p>
         </div>
       </div>
     </>
