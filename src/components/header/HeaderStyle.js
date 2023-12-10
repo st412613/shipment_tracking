@@ -49,19 +49,19 @@ const HeaderStyle = makeStyles(() => ({
   MenuNavContainer: {
     zIndex: '2',
     color: '#fff',
-    backgroundColor: '#fff',
+    backgroundColor: '#4F4A46',
+    height: '15vh',
     width: '100%',
     display: 'flex',
     position: 'sticky',
     top: 0,
   },
   logoContainer: {
-    padding: '4px 30px',
     backgroundColor: '#fff',
     width: '25%',
     '& img': {
       cursor: 'pointer',
-      width: '60%',
+      width: '100%',
       height: '100%',
     }
   },
@@ -184,7 +184,6 @@ const HeaderStyle = makeStyles(() => ({
       height: '14vh'
     },
     logoContainer: {
-      padding: '2px 10px',
       width: '50%',
       '& img': {
         width: '100%',

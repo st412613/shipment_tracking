@@ -4,7 +4,7 @@ import HeaderStyle from './HeaderStyle';
 import { Facebook, Twitter, Instagram, Pinterest, Phone, Mail, Clear, Menu, KeyboardArrowDown } from '@mui/icons-material';
 import MenuItem from '@mui/material/MenuItem';
 import {Box} from '@mui/material';
-import companyLogo from '../../assets/images/CompanyLogo.jpeg';
+import companyLogo from '../../assets/images/Logo.jpeg';
 
 const Header = () => {
   const classes = HeaderStyle();

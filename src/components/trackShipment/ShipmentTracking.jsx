@@ -6,9 +6,11 @@ const ShipmentTracking = () => {
   const classes = ShipmentTrackStyles();
   const [podInput, setPODInput] = useState('');
   const [responseData, setResponseData] = useState(null);
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleTextareaChange = (event) => {
     setPODInput(event.target.value);
+    setErrorMessage(''); // Clear error message on textarea change
   };
 
   const handleSubmit = async (event) => {
@@ -16,6 +18,7 @@ const ShipmentTracking = () => {
 
     // Perform validation here (you can customize the validation logic)
     if (!podInput.trim()) {
+      setErrorMessage('Please enter an AWB number.');
       return;
     }
 
@@ -27,12 +30,23 @@ const ShipmentTracking = () => {
       const response = await fetch(apiUrl);
       const data = await response.json();
 
+      if (response.ok && data && data.data && data.data.length > 0) {
+        // Handle the response data (you can update state, display data, etc.)
+        console.log('API Response:', data);
+        setResponseData(data);
+      } else {
+        const errorMessage = 'Invalid AWB number. Please check and try again.';
+        setErrorMessage(errorMessage);
+        console.error(errorMessage);
+      }
+
       // Handle the response data (you can update state, display data, etc.)
-      console.log('API Response:', data);
-      setResponseData(data);
+      // console.log('API Response:', data);
+      // setResponseData(data);
     } catch (error) {
-      console.error('Error fetching data:', error);
-      // Handle errors as needed
+      const errorMessage = 'Error fetching data. Please try again later.';
+      setErrorMessage(errorMessage);
+      console.error(errorMessage, error);
     }
   };
 
@@ -52,6 +66,9 @@ const ShipmentTracking = () => {
             </button>
           </div>
         </form>
+
+        {/* Display error message for invalid AWB or empty input */}
+        {errorMessage && <div className={classes.errorMessage}>{errorMessage}</div>}
 
         {/* Display the API response data */}
         {responseData && responseData.data && responseData.data.length > 0 && (
@@ -95,9 +112,6 @@ const ShipmentTracking = () => {
 
               <div className={classes.msgContent}>Your Order was delivered on {responseData.data[0].deliveryDate}</div>
             </div>
-
-            {/* Display the entire API response for debugging purposes */}
-            <pre>{JSON.stringify(responseData, null, 2)}</pre>
           </div>
         )}
       </div>

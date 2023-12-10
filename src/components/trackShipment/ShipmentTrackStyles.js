@@ -150,10 +150,24 @@ const ShipmentTrackStyles = makeStyles(() => ({
     color: '#000000',
     fontWeight: '500'
   },
+  errorMessage: {
+    color: 'red'
+  },
 
   '@media screen and (max-width: 768px)': {
     formContainer:{
       width: '100%',
+    },
+    summaryContainer: {
+      width: '100%',
+      '& h4': {
+        fontSize: '18px',
+      },
+      '& h1': {
+        '& span': {
+          fontSize: '18px',
+        }
+      }
     },
   }
 }));

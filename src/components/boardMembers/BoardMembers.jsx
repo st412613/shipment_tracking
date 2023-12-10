@@ -4,7 +4,7 @@ import { styled } from '@mui/material/styles';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
-import SumanImage from '../../assets/images/suman.jpeg';
+import SumanImage from '../../assets/images/Suman.jpeg';
 import GayatriImage from '../../assets/images/Gayatri.jpeg';
 
 const Item = styled(Paper)(({ theme }) => ({

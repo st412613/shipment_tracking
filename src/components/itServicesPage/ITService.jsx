@@ -1,5 +1,7 @@
 import React from 'react';
 import ITServicesStyle from './ITServiceStyle';
+import MobileApp from '../../assets/images/mobileApp.jpg';
+import APIServices from '../../assets/images/APIServices.jpg';
 
 const ITService = () => {
   const classes = ITServicesStyle();
@@ -12,7 +14,7 @@ const ITService = () => {
       Track Shipment
       Pickup Request
       Our Service Avality`,
-      imageUrl: '',
+      imageUrl: MobileApp,
     },
     {
       id: 1,
@@ -30,7 +32,7 @@ const ITService = () => {
       Proactive information on delivery
       Controls your express distribution needs
       Integrates with your business applications`,
-      imageUrl: '',
+      imageUrl: APIServices,
     },
   ];
     
