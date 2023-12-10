@@ -25,7 +25,8 @@ const MissionAndVision = () => {
             <div></div>
             <div className={classes.textContent}>
               <h4>Mission</h4>
-              <p>Our Mission is to offer a complete portfolio of logistics services to satisfy our customers needs. As a team, we are always committed to our customers cause at all times. We are specialized in what we do, and we try to upgrade ourselves through high-quality operational excellence.</p>
+              <p>We believe to be one of the most trusted service provider offering customer centric solutions, adhering to commitments and ensuring zero-defect on time delivery.
+We aim for customer delight by offering them with flexible and efficacious solutions best suited to meet their dynamic needs resulting in cost effective and intact deliveries.</p>
             </div>
             <div className={classes.imageContent}>
               <img alt='mission' src={MissionImage} />

@@ -20,98 +20,9 @@ const ContactUsFormStyles = makeStyles(() => ({
       color: '#004F6E'
     }
   },
-  formContainer: {
-    display: 'flex',
-    flexWrap: 'wrap'
-  },
-  nameContent: {
-    margin: '10px 0px',
-    border: '1px solid lightgrey',
-    flex: '0 0 50%',
-    maxWidth: '50%',
-    backgroundColor: '#fff',
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems:'center',
-    '& input': {
-      borderLeft: '1px solid lightgrey',
-      width: '100%',
-      padding: '10px 20px',
-      outline: 'none',
-      height: '30px',
-      border: 'none'
-    },
-    '& svg': {
-      color: '#004F6E',
-      cursor: 'pointer',
-      margin: '5px',
-    }
-  },
-  emailContent: {
-    margin: '10px 0px',
-    border: '1px solid lightgrey',
-    flex: '0 0 50%',
-    maxWidth: '50%',
-    backgroundColor: '#fff',
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems:'center',
-    '& input': {
-      borderLeft: '1px solid lightgrey',
-      width: '100%',
-      padding: '10px 20px',
-      outline: 'none',
-      height: '30px',
-      border: 'none'
-    },
-    '& svg': {
-      color: '#004F6E',
-      cursor: 'pointer',
-      margin: '5px',
-    }
-  },
-  descriptionContent: {
-    flex: '0 0 100%',
-    maxWidth: '100%',
-    margin: '20px 0px',
-    border: '1px solid lightgrey',
-    backgroundColor: '#fff',
-    display: 'flex',
-    justifyContent: 'space-between',
-    '& textarea': {
-      borderLeft: '1px solid lightgrey',
-      width: '100%',
-      padding: '10px 20px',
-      outline: 'none',
-      height: '20vh',
-      border: 'none'
-    },
-    '& svg': {
-      color: '#004F6E',
-      cursor: 'pointer',
-      margin: '10px',
-    }
-  },
-  buttonContainer:{
-    display: 'flex',
-    '& button': {
-      cursor: 'pointer',
-      background: '#004F6E',
-      color: '#fff',
-      marginRight: '2rem',
-      fontSize: '16px',
-      padding: '4px 20px',
-      border: 'none',
-      outline: 'none',
-      '&:hover': {
-        background: '#002233',
-        boxShadow: '4px 4px 0 rgba(0,0,0,.4)',
-        transition: 'background 0.2s, box-shadow 0.2s',
-      },
-    }
-  },
   contactInfoContainer: {
     width: '40%',
+    height: 'auto',
     padding: '2rem',
     backgroundColor: '#fff',
     '& h5': {
@@ -167,37 +78,12 @@ const ContactUsFormStyles = makeStyles(() => ({
     },
     contactFormContainer: {
       width: '100%',
+      height: '100vh',
       padding: '1rem',
       textAlign: 'center',
     },
     formContainer: {
       display: 'block',
-    },
-    nameContent: {
-      margin: '20px 0px',
-      maxWidth: '100%',
-      '& input': {
-        height: '40px',
-      }
-    },
-    emailContent: {
-      margin: '10px 0px',
-      maxWidth: '100%',
-      '& input': {
-        height: '40px',
-      }
-    },
-    descriptionContent: {
-      '& svg': {
-        margin: '5px',
-      }
-    },
-    buttonContainer:{
-      display: 'flex',
-      justifyContent: 'space-between',
-      '& button': {
-        marginRight: '0rem',
-      }
     },
     contactInfoContainer: {
       width: '100%',

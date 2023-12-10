@@ -3,23 +3,6 @@ import { makeStyles } from '@mui/styles';
 const BoardMemberStyle = makeStyles(() => ({
   boardMembersContent: {
     width: '100%',
-    '& div': {
-      '& div': {
-        '& div': {
-          '& div': {
-            height: '40vh',
-            '& h4': {
-              color: '#e91e63',
-              fontSize: '20px',
-            },
-            '& p': {
-              color: '#004F6E',
-              fontSize: '15px',
-            },
-          },
-        },
-      },
-    },
   },
   color: {
     height: '10vh',
@@ -32,6 +15,25 @@ const BoardMemberStyle = makeStyles(() => ({
     width: '100%',
     backgroundColor: '#e91e63'
   },
+  itemContainer: {
+    display: 'flex', 
+    width: '100%',
+  },
+  imageContent: {
+    width: '40%'
+  },
+  textContent: {
+    width: '60%',
+    paddingLeft: '10px',
+    '& h4': {
+      color: '#e91e63',
+      fontSize: '20px',
+    },
+    '& p': {
+      color: '#004F6E',
+      fontSize: '15px',
+    },
+  },
 
   '@media screen and (max-width: 768px)': {
     boardMembersContent: {
@@ -39,21 +41,32 @@ const BoardMemberStyle = makeStyles(() => ({
         '& div': {
           '& div': {
             marginBottom: '20px',
-            '& div': {
-              height: 'auto',
-              '& h4': {
-                fontSize: '18px',
-              },
-              '& p': {
-                fontSize: '14px',
-              },
-            },
           },
         },
       },
     },
     color: {
       display: 'none',
+    },
+    itemContainer: {
+      display: 'block', 
+      width: '90%',
+      margin: 'auto'
+    },
+    imageContent: {
+      width: '100%',
+      height: '60vh'
+    },
+    textContent: {
+      width: '100%',
+      '& h4': {
+        color: '#e91e63',
+        fontSize: '18px',
+      },
+      '& p': {
+        color: '#004F6E',
+        fontSize: '13px',
+      },
     },
   
   }

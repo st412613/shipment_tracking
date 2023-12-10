@@ -1,88 +1,23 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ContactUsFormStyles from './ContactUsFormStyles';
-import { Edit, Email, Person, Phone, Place } from '@mui/icons-material';
+import { Email, Phone, Place } from '@mui/icons-material';
 import HeadingSection from '../../common/headingSection/HeadingSection';
 
 const ContactUsForm = () => {
   const classes = ContactUsFormStyles();
   const mapData = 'https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3763.250309995756!2d72.83106387337905!3d19.40158794167408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sA%20301%20Murdang%20Building%20Sector%201%20Vasant%20Nagri%20Vasai(E)%20Mumbai%20%2C%20401208!5e0!3m2!1sen!2sin!4v1700885393634!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade';
 
-  // State to manage form data
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
-  });
-
-  const handleInputChange = (event) => {
-    const { name, value } = event.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-
-    // Perform form submission logic here (e.g., API call)
-    console.log('Submitted form data:', formData);
-
-    // Reset the form after submission
-    handleReset();
-  };
-
-  const handleReset = () => {
-    // Reset form data
-    setFormData({
-      name: '',
-      email: '',
-      message: '',
-    });
-  };
-
   return (
     <div className={classes.contactUsContainer}>
       <div className={classes.contactUsContent}>
         <div className={classes.contactFormContainer}>
           <h5>Contact Form</h5>
-          <form onSubmit={handleSubmit} className={classes.formContainer}>
-            <div className={classes.nameContent}>
-              <Person />
-              <input
-                type="text"
-                name="name"
-                placeholder="Enter name"
-                value={formData.name}
-                onChange={handleInputChange}
-              />
-            </div>
-            <div className={classes.emailContent}>
-              <Email />
-              <input
-                type="email"
-                name="email"
-                placeholder="Enter email"
-                value={formData.email}
-                onChange={handleInputChange}
-              />
-            </div>
-            <div className={classes.descriptionContent}>
-              <Edit />
-              <textarea
-                name="message"
-                value={formData.message}
-                onChange={handleInputChange}
-                placeholder="Enter here..."
-              />
-            </div>
-            <div className={classes.buttonContainer}>
-              <button type="submit">Submit</button>
-              <button type="button" onClick={handleReset}>
-                Reset
-              </button>
-            </div>
-          </form>
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSctHnlj7yrahYAbEe1g4B2wv58AvXTgUtpOc2_-EtThu8PvSw/viewform?embedded=true"
+            width="100%"
+            height="95%"
+          >
+          </iframe>
         </div>
         <div className={classes.contactInfoContainer}>
           <h5>Contact Info</h5>
