@@ -120,6 +120,10 @@ const TrackWithLRNStyles = makeStyles(() => ({
     color: '#000000',
     fontWeight: '500'
   },
+  loadingMessage: {
+    marginTop: '10px',
+    color: 'blue'
+  },
 
   '@media screen and (max-width: 768px)': {
     formContainer: {

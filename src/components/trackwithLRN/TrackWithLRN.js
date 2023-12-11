@@ -6,6 +6,7 @@ const TrackWithLRN = () => {
   const [podInput, setPODInput] = useState('');
   const [responseData, setResponseData] = useState(null);
   const [errorMessage, setErrorMessage] = useState('');
+  const [loading, setLoading] = useState(false);
 
   const handleTextareaChange = (event) => {
     setPODInput(event.target.value);
@@ -22,6 +23,7 @@ const TrackWithLRN = () => {
     }
 
     try {
+      setLoading(true); 
       // Construct the API URL with the entered LR number
       const apiUrl = `https://btob.api.delhivery.com/v2/track/${podInput}`;
 
@@ -41,6 +43,8 @@ const TrackWithLRN = () => {
       const errorMessage = 'Error fetching data. Please try again later.';
       setErrorMessage(errorMessage);
       console.error(errorMessage, error);
+    } finally {
+      setLoading(false); // Set loading to false after the API call is complete
     }
   };
 
@@ -60,6 +64,9 @@ const TrackWithLRN = () => {
             <button type="submit">Submit</button>
           </div>
         </form>
+
+        {/* Display loading message or spinner during data fetching */}
+        {loading && <div className={classes.loadingMessage}>Loading...</div>}
 
         {responseData && (
           <div className={classes.resultContainer}>
@@ -118,9 +125,6 @@ const TrackWithLRN = () => {
                 year: 'numeric',
               })} </div>
             </div>
-
-            <h4>Tracking Details:</h4>
-            <pre>{JSON.stringify(responseData, null, 2)}</pre>
           </div>
         )}
 

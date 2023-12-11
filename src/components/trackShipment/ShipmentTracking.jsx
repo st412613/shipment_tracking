@@ -7,6 +7,7 @@ const ShipmentTracking = () => {
   const [podInput, setPODInput] = useState('');
   const [responseData, setResponseData] = useState(null);
   const [errorMessage, setErrorMessage] = useState('');
+  const [loading, setLoading] = useState(false);
 
   const handleTextareaChange = (event) => {
     setPODInput(event.target.value);
@@ -23,6 +24,7 @@ const ShipmentTracking = () => {
     }
 
     try {
+      setLoading(true); 
       // Construct the API URL with the entered airway number
       const apiUrl = `https://dlv-api.delhivery.com/v3/unified-tracking?wbn=${podInput}`;
 
@@ -47,6 +49,8 @@ const ShipmentTracking = () => {
       const errorMessage = 'Error fetching data. Please try again later.';
       setErrorMessage(errorMessage);
       console.error(errorMessage, error);
+    } finally {
+      setLoading(false); // Set loading to false after the API call is complete
     }
   };
 
@@ -66,7 +70,8 @@ const ShipmentTracking = () => {
             </button>
           </div>
         </form>
-
+        {/* Display loading message or spinner during data fetching */}
+        {loading && <div className={classes.loadingMessage}>Loading...</div>}
         {/* Display error message for invalid AWB or empty input */}
         {errorMessage && <div className={classes.errorMessage}>{errorMessage}</div>}
 

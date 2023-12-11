@@ -153,7 +153,10 @@ const ShipmentTrackStyles = makeStyles(() => ({
   errorMessage: {
     color: 'red'
   },
-
+  loadingMessage: {
+    color: 'blue'
+  },
+  
   '@media screen and (max-width: 768px)': {
     formContainer:{
       width: '100%',
