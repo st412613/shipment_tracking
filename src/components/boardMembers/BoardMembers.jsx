@@ -27,7 +27,7 @@ const BoardMembers = () => {
               <Box className={classes.imageContent}><img src={GayatriImage} height={'100%'} width={'100%'} /></Box>
               <Box className={classes.textContent}>
                 <h4>Mrs. GAYATRI GOUD (CMD)</h4>
-                <p>Mrs. GAYATRI GOUD  who started this company on April 8th 2006 with an ambition of creating a highly motivated team to give personalized service to its clients .His origin was a humble beginning as a delivery pick up boy working on On Dot Courier & Cargo Ltd carrying with him a dream and a strong desire to develop a highly motivated and service efficient origination . He has 14 Year Exp. in the Logistics & Transport Industries.</p>
+                <p>Mrs. GAYATRI GOUD  who started this company on April 8th 2006 with an ambition of creating a highly motivated team to give personalized service to its clients.</p>
               </Box>
             </Item>
           </Grid>

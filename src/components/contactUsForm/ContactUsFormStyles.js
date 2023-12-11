@@ -14,6 +14,7 @@ const ContactUsFormStyles = makeStyles(() => ({
   },
   contactFormContainer: {
     width: '55%',
+    height: '160vh',
     backgroundColor: '#fff',
     padding: '2rem',
     '& h5': {
