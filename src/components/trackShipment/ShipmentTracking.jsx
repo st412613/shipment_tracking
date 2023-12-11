@@ -57,7 +57,7 @@ const ShipmentTracking = () => {
           <div className={classes.inputContainer}>
             <input
               type="text"
-              placeholder="Airway No."
+              placeholder="Enter AWB No."
               value={podInput}
               onChange={handleTextareaChange}
             />

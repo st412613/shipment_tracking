@@ -60,7 +60,8 @@ const Header = () => {
                 </NavLink>
                 <div className={classes.dropdownContent} style={{color: 'black'}}>
                   <NavLink to="/pincode-Tracking" className={classes.activeLink}>Pincode Tracking</NavLink>
-                  <NavLink to="/users/track-Your-Shipment" className={classes.activeLink}>Track Shipment</NavLink>
+                  <NavLink to="/users/track-Your-Shipment" className={classes.activeLink}>Track Shipment(AWB)</NavLink>
+                  <NavLink to="/users/track-Your-Shipment-LRN" className={classes.activeLink}>Track Shipment(LRN)</NavLink>
                 </div>
               </li>
               <li><NavLink to="/customer-login" className={classes.activeLink}>Customer Login</NavLink></li>
@@ -80,7 +81,8 @@ const Header = () => {
           <MenuItem onClick={closeNav}><NavLink to="/services" className={classes.activeLink}>Our Services</NavLink></MenuItem>
           <MenuItem onClick={closeNav}><NavLink to="/services/IT-services" className={classes.activeLink}>IT Services</NavLink></MenuItem>
           <MenuItem onClick={closeNav}><NavLink to="/pincode-Tracking" className={classes.activeLink}>Pincode Tracking</NavLink></MenuItem>
-          <MenuItem onClick={closeNav}><NavLink to="/users/track-Your-Shipment" className={classes.activeLink}>Track Shipment</NavLink></MenuItem>
+          <MenuItem onClick={closeNav}><NavLink to="/users/track-Your-Shipment" className={classes.activeLink}>Track Shipment(AWB)</NavLink></MenuItem>
+          <MenuItem onClick={closeNav}><NavLink to="/users/track-Your-Shipment-LRN" className={classes.activeLink}>Track Shipment(LRN)</NavLink></MenuItem>
           <MenuItem onClick={closeNav}><NavLink to="/customer-login" className={classes.activeLink}>Customer Login</NavLink></MenuItem>
           <MenuItem onClick={closeNav}><NavLink to="/contact-us" className={classes.activeLink}>Contact Us</NavLink></MenuItem>
         </Box>

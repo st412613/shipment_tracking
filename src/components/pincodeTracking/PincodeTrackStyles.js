@@ -42,7 +42,34 @@ const PincodeTrackStyles = makeStyles(() => ({
     }
   },
   errorMessage:{
-    color: 'red'
+    color: 'red',
+    marginTop: '10px',
+  },
+  resultContainer: {
+    width: '90%',
+    margin: '20px auto',
+    padding: '1.5rem',
+    backgroundColor: '#fff',
+    '& h5': {
+      marginBottom: '1rem',
+    },
+  },
+  resultTable: {
+    borderCollapse: 'collapse',
+    width: '100%',
+    '& th, & td': {
+      border: '1px solid #ddd',
+      padding: '8px',
+      textAlign: 'center',
+    },
+    '& th': {
+      backgroundColor: '#004F6E',
+      color: '#fff',
+    },
+  },
+  loadingMessage: {
+    marginTop: '10px',
+    color: 'blue'
   },
 
   '@media screen and (max-width: 768px)': {
@@ -65,6 +92,22 @@ const PincodeTrackStyles = makeStyles(() => ({
     },
     errorMessage:{
       fontSize: '0.8rem',
+    },
+    resultTable: {
+      display: 'flex',
+      overflowX: 'auto',
+      '& th, & td': {
+        display: 'block',
+        width: '100%',
+        boxSizing: 'border-box',
+      },
+      '& th': {
+        position: 'sticky',
+        top: 0,
+        backgroundColor: '#004F6E',
+        color: '#fff',
+        zIndex: 1,
+      },
     },
   }
 }));
