@@ -58,6 +58,7 @@ const PincodeTracking = () => {
     setErrorMessage('');
     setMatchingData(null);
   };
+  console.log(matchingData);
 
   return (
     <div className={classes.pincodeTrackContainer}>
@@ -93,6 +94,7 @@ const PincodeTracking = () => {
                 <th>Return Center</th>
                 <th>Dispatch Center</th>
                 <th>Origin Center</th>
+                <th>ODA</th>
               </tr>
             </thead>
             <tbody>
@@ -103,6 +105,7 @@ const PincodeTracking = () => {
                 <td>{matchingData['Return Center']}</td>
                 <td>{matchingData['Dispatch Center']}</td>
                 <td>{matchingData['Origin Center']}</td>
+                <td>{matchingData.ODA === 'FALSE' ? 'No' : 'yes'}</td>
               </tr>
             </tbody>
           </table>
