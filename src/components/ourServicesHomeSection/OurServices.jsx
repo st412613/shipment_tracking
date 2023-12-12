@@ -9,7 +9,6 @@ import TruckLogo from '../../assets/images/truckLogo.svg';
 import AirplaneLogo from '../../assets/images/airplaneLogo.svg';
 import TopayLogo from '../../assets/images/topayLogo.svg';
 import ReverseLogisticLogo from '../../assets/images/reverseLogisticLogo.svg';
-import WarehouseLogo from '../../assets/images/warehouseLogo.svg';
 import HeadingSection from '../../common/headingSection/HeadingSection';
 
 
@@ -25,11 +24,10 @@ const OurServices = () => {
   const classes = OurServicesStyle();
   const itemsData = [
     { id: 1, logo: TruckLogo , title: 'Surface cargo', description: 'We have gained immense expertise in providing Surface Cargo Service to respectable clients.' },
-    { id: 2, logo: TrainLogo , title: 'train cargo', description: 'we transport goods by Express trains instead of the traditional goods trains.' },
+    { id: 2, logo: TrainLogo , title: 'train cargo', description: 'We transport goods by Express trains instead of the traditional goods trains.' },
     { id: 3, logo: AirplaneLogo, title: 'air cargo', description: 'We are one of the leading firms engaged in providing Air Cargo Service to esteemed clients.' },
     { id: 4, logo: TopayLogo, title: 'Cod & topay service', description: 'We are providing Logistics & Transport , COD & ToPay.' },
-    { id: 5, logo: ReverseLogisticLogo, title: 'reverse logistic', description: 'NCPL provide Reverse Logistics to the Customer.' },
-    { id: 6, logo: WarehouseLogo, title: 'ware house', description: 'NCPL Logistics have own warehouse Mumbai & Haridwar.' },
+    { id: 5, logo: ReverseLogisticLogo, title: 'reverse logistic', description: 'NowTransit Cargo Private Limited provide Reverse Logistics to the Customer.' },
   ];
 
   return (

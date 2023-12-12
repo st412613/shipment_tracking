@@ -12,7 +12,7 @@ const Footer = () => {
           <div className={classes.contentBox}>
             <h2>About Us</h2>
             <div className={classes.content}>
-              <h1>NCPL</h1>
+              <h1>NowTransit Cargo Private Limited</h1>
               <p>NowTransit Cargo Private Limited today a multi-unit, multi-location and multi-faceted Transport and Logistics conglomerate in India having a tracking record of over Three Months. As a group it offers a complete range of Supply chain solutions that harness the use of technology and decision support tools.</p>
               <div className={classes.socialIcon}>
                 <Facebook />

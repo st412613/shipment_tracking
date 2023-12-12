@@ -34,7 +34,7 @@ const FooterStyle = makeStyles(() => ({
   },
   content: {
     '& h1': {
-      fontSize: '2.8rem',
+      fontSize: '30px',
       background: 'linear-gradient(to top, #e91e63, lightblue)',
       WebkitBackgroundClip: 'text',
       WebkitTextFillColor: 'transparent',
