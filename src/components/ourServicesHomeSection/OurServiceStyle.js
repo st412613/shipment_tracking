@@ -9,9 +9,6 @@ const OurServicesStyle = makeStyles(() => ({
     margin: '6rem auto',
     textAlign: 'center',
   },
-  gridContainer: {
-    marginTop: '3rem',
-  },
   gridContent: {
     margin: '10px 20px',
     '& h5': {
@@ -28,23 +25,22 @@ const OurServicesStyle = makeStyles(() => ({
   },
   logoContainer: {
     margin: '20px auto',
-    width: '40%',
-    height: '40%',
+    width: '80%',
+    height: '20vh',
     '& img': {
-      width: '100%',
-      height: '100%',
-      '& svg': {
-        color: 'red',
-      }
+      width: '80%',
+      height: '80%',
     }
+  },
+
+
+  ourServiceContainer: {
+    margin: '0px 10px 10px 10px',
   },
 
   '@media screen and (max-width: 768px)': {
     mainContainer: {
       margin: '3rem auto',
-    },
-    gridContainer: {
-      marginTop: '2rem',
     },
     gridContent: {
       '& h5': {
