@@ -7,7 +7,7 @@ import TruckLogo from '../../assets/images/truckLogo.png';
 import AirplaneLogo from '../../assets/images/airoplaneLogo.png';
 import TopayLogo from '../../assets/images/topayLogo.png';
 import FastDeliveryLogo from '../../assets/images/fastDeliveryLogo.png';
-import ECommerceLogo from  '../../assets/images/ecommerceLogo.png';
+import ECommerceLogo from  '../../assets/images/ecommerceLogo.jpg';
 import ReverseLogisticLogo from '../../assets/images/reverseLogisticLogo1.svg';
 import HeadingSection from '../../common/headingSection/HeadingSection';
 import Carousel from 'react-elastic-carousel';

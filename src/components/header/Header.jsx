@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import HeaderStyle from './HeaderStyle';
-import { Facebook, Twitter, Instagram, Pinterest, Phone, Mail, Clear, Menu, KeyboardArrowDown } from '@mui/icons-material';
+import { Facebook, Twitter, Instagram, Pinterest, Mail, Clear, Menu, KeyboardArrowDown, PhoneAndroid } from '@mui/icons-material';
 import MenuItem from '@mui/material/MenuItem';
 import {Box} from '@mui/material';
 import companyLogo from '../../assets/images/Logo.jpeg';
@@ -26,9 +26,13 @@ const Header = () => {
           <Instagram />
           <Pinterest />
         </div>
+        <div className={classes.logoImageContainer}>
+          <h6>NOWTRANSIT CARGO PRIVATE LIMITED</h6>
+          <p>A 301 Murdang Building Sector 1 <br />Vasant Nagri Vasai(E) Mumbai</p>
+        </div>
         <div className={classes.ContactInfoContainer}>
-          <p><span><Mail /></span>info@nowtransitcargo.com ,  Sales@nowtransitcargo.com</p>
-          <p><span><Phone /></span>9930002453, 9646666663</p>
+          <h6><span><PhoneAndroid />HELPLINE NO : </span>9930002453, 9646666663</h6>
+          <p><span><Mail />MAIL US : </span>info@nowtransitcargo.com</p>
         </div>
       </div>
 

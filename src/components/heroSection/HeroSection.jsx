@@ -5,7 +5,6 @@ import ShipImage from '../../assets/images/ship.jpg';
 import TrainImage from '../../assets/images/train.jpg';
 import TruckImage from '../../assets/images/truck.jpg';
 import ShipmentImage from '../../assets/images/shipment.jpg';
-import EcomerceImage from '../../assets/images/eccomerce.jpg';
 
 const HeroSection = () => {
   const classes = HeroStyle();
@@ -21,9 +20,6 @@ const HeroSection = () => {
         </ol>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img className="d-block w-100" src={EcomerceImage} alt="First slide" />
-          </div>
-          <div className="carousel-item">
             <img className="d-block w-100" src={AeroplaneImage} alt="Second slide" />
           </div>
           <div className="carousel-item">

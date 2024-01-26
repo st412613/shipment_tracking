@@ -23,6 +23,7 @@ const ITServicesStyle = makeStyles(() => ({
       marginBottom: '20px',
       textTransform: 'uppercase',
       color:  '#004F6E',
+      fontSize: '2rem',
     },
     '& p': {
       color:  '#004F6E',

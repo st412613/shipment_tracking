@@ -1,7 +1,7 @@
 import React from 'react';
 import ScrollToTopOnPageChange from './common/scrollToTop/ScrollToTop';
 import Header from './components/header/Header';
-import Footer from './components/footer/Footer';
+import FooterBelow from './components/footerBelow/FooterBelow';
 import Home from './pages/Home';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import About from './pages/About';
@@ -30,7 +30,7 @@ function App() {
           <Route path='/users/track-Your-Shipment-LRN' element={<TrackShipmentLRN />} />
           <Route path='/customer-login' element={<CustomerLogin />} />
         </Routes>
-        <Footer />
+        <FooterBelow />
       </Router>
     </>
   );

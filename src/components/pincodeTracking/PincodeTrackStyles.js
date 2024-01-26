@@ -13,6 +13,7 @@ const PincodeTrackStyles = makeStyles(() => ({
     backgroundColor: '#fff',
     '& h4': {
       color:  '#004F6E',
+      forntSize: '2rem'
     }
   },
   formContainer:{

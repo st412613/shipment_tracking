@@ -21,7 +21,7 @@ const LoginFormStyles = makeStyles(() => ({
         position: 'absolute',
         left: '30%',
         bottom: '-15px',
-        backgroundColor: '#e91e63',
+        backgroundColor: '#F0801A',
         height: '2px',
         boxSizing: 'border-box',
         width: '40%',

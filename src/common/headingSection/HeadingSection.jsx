@@ -10,13 +10,16 @@ const useStyles = makeStyles(() => ({
     '& h1': {
       display: 'inline-flex',
       color:  '#004F6E',
+      textTransform: 'uppercase',
+      fontWeight: '700',
+      fontSize: '2.9rem',
       position: 'relative',
       '&::before': {
         content: '""',
         position: 'absolute',
         left: 0,
         bottom: '-10px',
-        backgroundColor: '#e91e63',
+        backgroundColor: '#F0801A',
         height: '2px',
         boxSizing: 'border-box',
         width: '100%',
@@ -24,7 +27,7 @@ const useStyles = makeStyles(() => ({
     },
     '& h5': {
       marginTop: '20px',
-      fontSize: '16px',
+      fontSize: '20px',
       fontWeight: 400,
     }
   },
@@ -33,10 +36,10 @@ const useStyles = makeStyles(() => ({
     headingContainer: {
       margin: '2rem auto',
       '& h1': {
-        fontSize: '24px',
+        fontSize: '2.2rem',
       },
       '& h5': {
-        fontSize: '14px',
+        fontSize: '16px',
       }
     },
   }

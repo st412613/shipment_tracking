@@ -4,6 +4,7 @@ const HeroStyle = makeStyles(() => ({
   heroContainer: {
     '& div': {
       '& div': {
+        boxShadow: 'rgba(0, 0, 0, 0.45) 0px 25px 20px -20px',
         '& div': {
           width: '100%',
           height: '90vh',

@@ -16,7 +16,7 @@ const useStyles = makeStyles(() => ({
       color: '#004F6E',
       margin: 'auto 3rem',
       '& span': {
-        color: '#e91e63',
+        color: '#F0801A',
         textTransform: 'uppercase',
       },
     }

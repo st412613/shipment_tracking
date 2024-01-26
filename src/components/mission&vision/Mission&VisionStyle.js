@@ -67,7 +67,7 @@ const MissionVisionStyle = makeStyles(() => ({
         position: 'absolute',
         left: 0,
         bottom: '-6px',
-        backgroundColor: '#e91e63',
+        backgroundColor: '#F0801A',
         height: '2px',
         boxSizing: 'border-box',
         width: '10%',

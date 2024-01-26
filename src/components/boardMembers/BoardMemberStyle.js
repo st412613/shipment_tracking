@@ -13,7 +13,7 @@ const BoardMemberStyle = makeStyles(() => ({
     zIndex: '-1',
     position: 'absolute',
     width: '100%',
-    backgroundColor: '#e91e63'
+    backgroundColor: '#F0801A'
   },
   itemContainer: {
     display: 'flex', 
@@ -26,7 +26,7 @@ const BoardMemberStyle = makeStyles(() => ({
     width: '60%',
     paddingLeft: '10px',
     '& h4': {
-      color: '#e91e63',
+      color: '#F0801A',
       fontSize: '20px',
     },
     '& p': {
@@ -60,7 +60,7 @@ const BoardMemberStyle = makeStyles(() => ({
     textContent: {
       width: '100%',
       '& h4': {
-        color: '#e91e63',
+        color: '#F0801A',
         fontSize: '18px',
       },
       '& p': {

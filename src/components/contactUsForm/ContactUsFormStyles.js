@@ -18,7 +18,8 @@ const ContactUsFormStyles = makeStyles(() => ({
     backgroundColor: '#fff',
     padding: '2rem',
     '& h5': {
-      color: '#004F6E'
+      color: '#004F6E',
+      fontSize: '2rem'
     }
   },
   contactInfoContainer: {
@@ -27,7 +28,8 @@ const ContactUsFormStyles = makeStyles(() => ({
     padding: '2rem',
     backgroundColor: '#fff',
     '& h5': {
-      color: '#004F6E'
+      color: '#004F6E',
+      fontSize: '2rem'
     }
   },
   contactInfoContent: {
@@ -39,7 +41,7 @@ const ContactUsFormStyles = makeStyles(() => ({
     marginBottom: '1rem',
   },
   iconContent:{
-    backgroundColor: '#e91e63',
+    backgroundColor: '#F0801A',
     color: '#fff',
     width: '3rem',
     height: '3rem',

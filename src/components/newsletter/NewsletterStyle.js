@@ -11,7 +11,7 @@ const NewsLetterStyle = makeStyles(() => ({
     display: 'grid',
     gridTemplateColumns: '5fr 5fr',
     gridGap: '5px',
-    backgroundColor:  '#e91e63',
+    backgroundColor:  '#F0801A',
     padding: '20px',
   },
   content: {
@@ -73,7 +73,7 @@ const NewsLetterStyle = makeStyles(() => ({
   '@media screen and (max-width: 768px)': {
     newsletterContainer: {
       display: 'block',
-      backgroundColor:  '#e91e63',
+      backgroundColor:  '#F0801A',
     },
     leftContainer: {
       width: '100%',
@@ -100,7 +100,7 @@ const NewsLetterStyle = makeStyles(() => ({
     },
     rightContainer: {
       width: '100%',
-      backgroundColor:  '#e91e63',
+      backgroundColor:  '#F0801A',
       padding: '0px 0px 18px 0px',
       display: 'flex',
       flexDirection: 'column',

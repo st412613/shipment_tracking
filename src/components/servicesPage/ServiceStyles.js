@@ -20,6 +20,7 @@ const ServiceStyle = makeStyles(() => ({
     width: '70%',
     padding: '0px 20px',
     '& h3': {
+      fontSize: '2rem',
       marginBottom: '20px',
       textTransform: 'uppercase',
       color:  '#004F6E',

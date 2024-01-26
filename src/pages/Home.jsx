@@ -1,8 +1,9 @@
 import React from 'react';
-import Newsletter from '../components/newsletter/Newsletter';
+// import Newsletter from '../components/newsletter/Newsletter';
 import HeroSection from '../components/heroSection/HeroSection';
 import Welcome from '../components/aboutUsHomeSection/Welcome';
 import OurServices from '../components/ourServicesHomeSection/OurServices';
+import CustomerReview from '../components/customerReview/CustomerReview';
 
 const Home = () => {
   return (
@@ -10,7 +11,8 @@ const Home = () => {
       <HeroSection />
       <Welcome />
       <OurServices />
-      <Newsletter />
+      <CustomerReview />
+      {/* <Newsletter /> */}
     </>
   );
 };
